@@ -7,7 +7,7 @@ router.post("/", async (req, res) => {
 
   try {
     const predictionResponse = await axios.post(
-      "http://localhost:5000/predict",
+      "http://44.204.60.120:5000/predict",
       studentData
     );
     const { dropout_risk, recommended_activities } = predictionResponse.data;
