@@ -7,7 +7,7 @@ const RandomData = () => {
   const getRandomAttendance = () => Math.round(Math.random());
   const handleSubmit = async () => {
     const response = await axios.post(
-      "http://localhost:4000/api/predict",
+      "http://44.204.6.171:4000/api/predict",
       data
     );
     console.log(data);
