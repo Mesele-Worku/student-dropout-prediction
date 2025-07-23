@@ -20,7 +20,7 @@ export default function EngagementForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:4000/api/predict", form);
+    const res = await axios.post("http://44.204.6.171:4000/api/predict", form);
     console.log(form);
     setResult(res.data);
   };
